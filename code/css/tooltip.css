@@ -1,0 +1,17 @@
+.tooltip{
+  position: absolute;
+  font-family: var(--font-2);
+  font-weight: bold;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem 1.5rem;
+  box-shadow: inset 0px 0px 0px 5px #ffbb55;
+  color: #fff;
+  border-radius: 10px;
+  outline: 3px solid rgba(0, 0, 0, 0.6);
+  width: 200px;
+}
+
+[data-mapa-img]{
+  position: relative;
+}

@@ -1,0 +1,66 @@
+.animais-numero{
+  grid-row: 4;
+  grid-column: 3 / -1;
+}
+
+.grid-2-cl{
+  grid-column: 3;
+  margin-top: 4rem;
+}
+
+
+
+.lista-numeros{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 50px;
+}
+@media(max-width:1000px){
+  .numeros-h1{
+    font-size: 
+    4rem !important;
+    grid-column: 2 / -1;
+    width: auto;
+  }
+
+  .grid-2-cl{
+    grid-column: 1;
+  }
+
+  .animais-numero{
+    grid-column: 1;
+  }
+
+  .lista-numeros{
+    grid-template-columns: auto auto;
+  }
+
+
+}
+@media(max-width:560px){
+  main{
+    padding: 3rem 3rem;
+    grid-template-columns: auto;
+  }
+
+  .grid-row-faq{
+    margin-bottom: 1rem;
+  }
+
+  .numeros-h1{
+    grid-column: 1;
+    font-size: 2rem !important;
+  }
+
+}
+
+.lista-numeros li h2{
+  font-family: var(--font-1);
+}
+.lista-numeros li p{
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--cor-p-2) !important;
+  font-family: var(--font-2);
+}

@@ -1,0 +1,41 @@
+.grid-row-faq{
+  grid-row: 3;
+  display: grid;
+  margin-bottom: 5rem;
+  grid-template-columns: 90px 130px 400px 500px;
+}
+
+.grid-item-faq{
+  margin-top: 4rem;
+  grid-column: 3 / -1;
+}
+
+
+@media(max-width:1000px){
+  .grid-row-faq{
+    grid-template-columns: 90px 130px 400px auto;
+  }
+}
+@media(max-width:560px){
+  .grid-row-faq{
+    padding: 3rem 3rem;
+    grid-template-columns: auto;
+  }
+
+  .grid-item-faq {
+    margin-top: 1rem;
+  }
+}
+
+dt{
+  font-size: 1.2rem;
+  color: var(--cor-p-2);
+  font-family: var(--font-2);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+dd{
+  margin-left: 2.3rem;
+  margin-top: 1rem;
+}

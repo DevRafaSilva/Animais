@@ -1,0 +1,170 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: #FAF6ED;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+button{
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+button:focus{
+  outline: 4px solid red;
+  width: fit-content;
+  height: fit-content;
+}
+
+:root{
+  --font-1:  "Playfair Display SC";
+  --font-2:  "IBM Plex Mono";
+  --cor-p1:  #FFBB55;
+  --cor-w-1: #FAF6ED;
+  --cor-p-2: #EE5544;
+}
+
+body{
+  display: grid;
+  grid-template-columns: 200px 130px 1fr ;
+}
+
+@media(max-width:1000px){
+  body{
+    display: block;
+  }
+}
+
+
+.upercase{
+  text-transform: uppercase;
+}
+
+.size-1-p{
+  font-size:.9rem;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.titulo-grande{
+  font-size: 6rem;
+}
+
+@media(max-width:560px){
+  .titulo-grande{
+    font-size: 3rem;
+  }
+}
+
+.detalhe{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.detalhe::before{
+  content: "";
+  background-color: var(--cor-p1);
+  width: 30px;
+  height: 10px;
+  display: inline-block;
+}
+
+.mrg-media{
+  margin: 1rem 0;
+}
+
+.font-3{
+  font-family: Helvetica;
+  letter-spacing: .4px;
+}
+
+[data-anima-scrool]{
+  opacity: 0;
+}
+
+
+[data-tab-conteudo].on,
+[data-conteudo-faq].on{
+  display: block;
+  animation: SlideLeft 1s forwards;
+}
+
+@keyframes SlideLeft {
+  from {
+    transform: translate3d(-50px,0,0);
+    opacity: 0;
+    transition: .7s;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px,0,0);
+  }
+}
+
+[data-modal-login]{
+  display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  width: 100%;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+[data-modal-login].on-modal{
+  display: flex;
+  position: fixed;
+  animation: SlideTop 1s forwards;
+}
+
+[data-animacao-drodown].on{
+  
+  animation: SlideTop2 1s forwards;
+}
+
+@keyframes SlideTop {
+  from {
+    transform: translate3d(0,-50px,0);
+    opacity: 0;
+    transition: .7s;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px,0,0);
+  }
+}
+@keyframes SlideTop2 {
+  from {
+    transform: translate3d(0,10px,0);
+    opacity: 0;
+    transition: .7s;
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0px,0,0);
+  }
+}
+
+[data-anima-scrool].on{
+  opacity: 1;  
+  animation: SlideLeft 1s forwards;
+}
+
+main,section,article{
+  padding-left: 1rem;
+}

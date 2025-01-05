@@ -1,0 +1,60 @@
+.contato{
+  grid-row: 6;
+  display: grid;
+  grid-template-columns: 90px 130px 400px 500px;
+}
+.grid-contato{
+  grid-column: 3;
+  display: flex;
+  gap: 30px;
+  margin-top: 3rem;
+}
+
+
+@media(max-width:1000px){
+  .contato{
+    grid-template-columns: 90px 130px 400px auto;
+  }
+
+  .grid-contato{
+    grid-column: 2 / 4;
+    grid-row: 5;
+    display: inline-block;
+  }
+
+  .contato ul{
+    margin-top: 3rem;
+    flex: 1;
+  }
+
+}
+@media(max-width:560px){
+  .contato{
+    padding: 3rem 3rem;
+   display: block;
+  }
+
+  .contato ul{
+    margin-top: 3rem;
+  }
+}
+
+.lista-contato li{
+  margin-bottom: 1rem;
+}
+
+.horario{
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  border: 2px solid #333;
+  padding: .2rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
+[data-bitcoin]{
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 3px 6px;
+}

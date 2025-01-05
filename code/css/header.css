@@ -1,0 +1,25 @@
+
+.header{
+  padding: 1rem 2rem;
+  font-family: var(--font-2);
+  grid-column: 3 / -1;
+  margin-top: 2rem;
+  background-color: var(--cor-p1);
+}
+
+@media(max-width:1000px){
+  .header{
+    margin-top: 0rem;
+  }
+}
+header ul{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav li a{
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+}
