@@ -168,3 +168,8 @@ body{
 main,section,article{
   padding-left: 1rem;
 }
+
+footer{
+  grid-row: 7;
+  margin: -4rem 0;
+}
